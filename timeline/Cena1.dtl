@@ -1,0 +1,22 @@
+As luzes ao meu redor se apagam. Eu sei o que vai acontecer. Não sou o primeiro, nem o último. Desde semana passada, um morador é encontrado morto. Como eu sei? O monstro responsável se encontra na minha frente.
+Não é nada pessoal. É só que exercer responsabilidade com poder é tão… chato. Desde que ganhei esse poder, tudo ficou bem mais fácil
+join Osvaldo leftmost
+Osvaldo: Que droga. Imagina ser tão desesperado a ponto de estar disposto a sacrificar inocentes. Eu salvei a sua vida, então vem comigo
+leave --All--
+Não é como se eu tivesse uma escolha.
+
+join Osvaldo leftmost
+[wait time="1.0"]
+[signal arg="primeiraCena"]
+Osvaldo: Bem vindo a sua nova casa. A mídia vai falar que você morreu corajosamente enfrentando aquele lobisomem, e conseguiu derrotá-lo. Um herói moderno no jornal, esquecido em uma semana. É o máximo que conseguirá
+leave --All--
+Que ótimas notícias pra eu saber. Não acredito que
+join Osvaldo leftmost
+Osvaldo: Imagino que já esteja familiar com o funcionamento da cidade. Lobisomens, cidadãos e loucos. Esses são os grupos principais distribuídos ao seu redor. Foi uma experiência traumática… Quer dar uma lembrada?
+leave --All--
+[wait time="1.5"]
+# Tutoras vem aqui
+- Sim, eu gostaria (Fazer Tutorial)
+	[signal arg="tutoras"]
+- Não, eu to de boa (Pular Tutorial)
+	jump Cena1_2/

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://4vh6dekmk814"]
+
+[ext_resource type="Script" uid="uid://b63hxjpkxrp7x" path="res://scripts/game_settings/main.gd" id="1_j4d2a"]
+[ext_resource type="Texture2D" uid="uid://d1k7wfns8pbx6" path="res://Assets/backgrounds/background_1.jpg" id="2_u81e1"]
+[ext_resource type="Texture2D" uid="uid://dgwb7rsoipmob" path="res://Assets/characters/MainChar.png" id="3_b6bv0"]
+[ext_resource type="Texture2D" uid="uid://ble6g8jxsv2tv" path="res://Assets/characters/Detetive.png" id="4_ubwgw"]
+[ext_resource type="PackedScene" uid="uid://bm5h6s4fkf3a0" path="res://scenes/Personagens/character_body_2d.tscn" id="5_u81e1"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_j4d2a")
+
+[node name="Background1" type="Sprite2D" parent="."]
+position = Vector2(962, 542)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_u81e1")
+
+[node name="MainChar" type="Sprite2D" parent="."]
+position = Vector2(683, 630)
+scale = Vector2(-1, 1)
+texture = ExtResource("3_b6bv0")
+
+[node name="Detetive" type="Sprite2D" parent="."]
+position = Vector2(1163, 630)
+texture = ExtResource("4_ubwgw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -48.0
+offset_top = -230.0
+offset_right = -7.99999
+offset_bottom = -190.0
+scale = Vector2(50, 40)
+color = Color(0, 0, 0, 1)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("5_u81e1")]
+position = Vector2(-61, 630)
+scale = Vector2(-2.6, 2.6)

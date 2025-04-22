@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdu14a03uvpmn"]
+
+[ext_resource type="Script" uid="uid://dkaeiym5mjxum" path="res://scripts/game_settings/tutoras.gd" id="1_ctffh"]
+[ext_resource type="Texture2D" uid="uid://d1k7wfns8pbx6" path="res://Assets/backgrounds/background_1.jpg" id="1_iqkkp"]
+[ext_resource type="FontFile" uid="uid://crkrfqffc4x28" path="res://UI/Fonts/VCR_OSD_MONO_1.001.ttf" id="2_af48e"]
+[ext_resource type="Texture2D" uid="uid://ble6g8jxsv2tv" path="res://Assets/characters/Detetive.png" id="2_kry4g"]
+[ext_resource type="Texture2D" uid="uid://dgwb7rsoipmob" path="res://Assets/characters/MainChar.png" id="3_cixbb"]
+
+[node name="Tutoras" type="Node2D"]
+script = ExtResource("1_ctffh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LabelTurno" type="Label" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 650.0
+offset_top = 170.0
+offset_right = 1150.0
+offset_bottom = 370.0
+theme_override_fonts/font = ExtResource("2_af48e")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ataque" type="Button" parent="CanvasLayer/UI"]
+layout_mode = 2
+offset_left = 450.0
+offset_top = 875.0
+offset_right = 514.0
+offset_bottom = 915.0
+scale = Vector2(3.02196, 2.41807)
+theme_override_fonts/font = ExtResource("2_af48e")
+theme_override_font_sizes/font_size = 20
+text = "Ataque"
+
+[node name="defesa" type="Button" parent="CanvasLayer/UI"]
+layout_mode = 2
+offset_left = 1200.0
+offset_top = 875.0
+offset_right = 1264.0
+offset_bottom = 915.0
+scale = Vector2(3.022, 2.418)
+theme_override_fonts/font = ExtResource("2_af48e")
+theme_override_font_sizes/font_size = 20
+text = "Defesa
+"
+
+[node name="Background1" type="Sprite2D" parent="."]
+position = Vector2(962, 542)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_iqkkp")
+
+[node name="Detetive" type="Sprite2D" parent="."]
+position = Vector2(1163, 630)
+texture = ExtResource("2_kry4g")
+
+[node name="MainChar" type="Sprite2D" parent="."]
+position = Vector2(683, 630)
+scale = Vector2(-1, 1)
+texture = ExtResource("3_cixbb")

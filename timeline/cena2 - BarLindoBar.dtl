@@ -1,0 +1,67 @@
+join Isla leftmost
+Isla: Novato, vamos lá. Primeira atividade\: visitar a central de informações mais confiável do mundo, lá vamos achar o que precisamos.
+leave --All--
+join principal leftmost
+principal: Mas nós precisamos do que? Eu estou perdido. Completamente perdido
+leave --All--
+join Isla leftmost
+Isla: Ah, você vai ver! Precisamos achar os lobinhos e entregar eles pra polícia, eu acho!
+leave --All--
+join principal leftmost
+principal: …Você é uma das loucas?
+leave --All--
+join Isla leftmost
+Isla: Não? Sou obviamente a única, a melhor, a estupenda detetive Isla. Recém contratada pelo nosso chefe
+leave --All--
+join principal leftmost
+- Eu duvido muito disso.
+	principal: Eu duvido muito disso.
+- Se você diz, então ok!
+	principal: Se você diz, então ok!
+leave --All--
+join Isla leftmost
+Isla: Não sei se você acredita em mim ou não, jovem. Isso me incomoda bastante.
+leave --All--
+join principal leftmost
+principal: A gente… tem que investigar, sabe? Que tal irmos pro bar logo?
+leave --All--
+join Isla leftmost
+Isla: Ok, ok, vamos. Para o Lindobar!
+leave --All--
+Isla sai e {namePlayer} logo sai atrás
+# Background troca para o Bar
+[signal arg="scene_switch"]
+join principal leftmost
+principal: Lindobar… Esse é o nome do local em que me encontro.
+join Lindomar center
+Lindomar: Opa opa! Se não é minha detetive favorita, Isla!
+leave --All--
+join Isla leftmost
+Isla: Tio Mar! Esse aqui é o {namePlayer}, meu novo subordinado. Quer dizer, subordinado do Osvaldo, mas eu trabalho a mais tempo do que ele.
+leave --All--
+join Lindomar center
+Lindomar: Prazer em te conhecer, jovem. Meu nome é Lindomar, dono do Lindobar, o lugar mais confiável pra se informar!
+leave --All--
+join randomGritando center
+randomGritando: Eu tô te falando cara! Ele é um lobisomem! Você não viu ele passeando com o cachorro?! Só lobisomens tem lobisomens!
+randomGritando: Você realmente acha que aquele cachorro não era um lobisomem?! Para com essa! Mentira.
+leave --All--
+join principal leftmost
+principal: Desde quando cachorros são lobisomens?
+leave --All--
+join Isla leftmost
+Isla: Aposto que está se confundindo, criança. Eles não estão falando que lobisomens são cachorros. Eles usam códigos.
+leave --All--
+join principal leftmost
+principal: Ainda não faz sentido. Vamos tentar falar com alguém mais… confiável, por favor, Isla
+leave --All--
+join Lindomar center
+Lindomar: Epa, chefe, cuidado aí. Tú é visita e subordinado. A Isla que manda aqui.
+leave --All--
+join Isla leftmost
+Isla: Valeu, Tio Mar. Mas esse aqui tem uma cachola boa. Confio em ti.
+leave --All--
+join principal leftmost
+principal: Ok, consigo avistar o louco do cachorro, um cara encapuzado ali atrás, e um bebendo.
+leave --All--
+# Três dialogos um com o louco do cachorro - Homem encapuzado - Homem bebado

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://jnp46arql5hw"]
+
+[ext_resource type="Texture2D" uid="uid://cdun50r11x3jx" path="res://Assets/backgrounds/lindobar_back.jpg" id="1_2c4ji"]
+[ext_resource type="Script" uid="uid://1rf3a7n3k1g6" path="res://scripts/game_settings/lindobar.gd" id="1_dddqj"]
+[ext_resource type="Texture2D" uid="uid://vpjxtgammte6" path="res://Assets/characters/Isla.png" id="2_lhvmu"]
+[ext_resource type="PackedScene" uid="uid://c8dvxmj5ng33d" path="res://scenes/Personagens/prota_move.tscn" id="3_dddqj"]
+
+[node name="Lindobar" type="Node2D"]
+script = ExtResource("1_dddqj")
+
+[node name="LindobarBack" type="Sprite2D" parent="."]
+position = Vector2(962, 542)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_2c4ji")
+
+[node name="Isla" type="Sprite2D" parent="."]
+position = Vector2(1361, 630)
+texture = ExtResource("2_lhvmu")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_dddqj")]
+texture_filter = 1
+position = Vector2(1032, 630)
+scale = Vector2(-1.4, 1.3)

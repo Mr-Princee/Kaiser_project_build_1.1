@@ -1,0 +1,37 @@
+join Detetive leftmost
+Detetive: Meu nome é Osvaldo, antes que me esqueça de te contar. E o seu?
+leave --All--
+[text_input text="Qual é o seu nome?" var="namePlayer" default="Gojo"]
+join principal leftmost
+principal: …Não tenho muita certeza do que fazer agora. Se eu morri pra sociedade, pra onde vou?
+leave --All--
+join Detetive leftmost
+Detetive: Te salvei. Me deve uma. Vai até o distrito 3 e visita o Bar dos Loucos, e fala que o Osvaldo te mandou.
+leave --All--
+join principal leftmost
+principal: Se você não queria encontrar os loucos, porque está me mandando pra um bar cheio deles?
+leave --All--
+join Detetive leftmost
+Detetive: Porque nem todos loucos são loucos. E se já é considerado um criminoso, porque não se fingir de louco? Essa é a solução de alguns detetives.
+leave --All--
+join principal leftmost
+principal: E quem mais estaria disposto a ajudar um detetive se fingindo de louco, do que um deles. Estamos na borda entre os distritos 2 e 3… é muito longe?
+principal: Espera, porquê você tá me mandando pra um lugar sem endereço, local, ou ponto de referência? É pra eu adivinhar?
+leave --All--
+join Detetive leftmost
+Detetive: Não precisa se enfurecer tanto assim. A Isla vai te guiar. Isla!
+[wait time="2.0"]
+leave Detetive
+[signal arg="isla"]
+join Isla leftmost
+Isla: Sim, sim, chefe. Barzinho dos loucos, lá vamos nós. O tio Mar vai gostar de você. Estou chutando que esse é o nome do dono do bar
+Isla: Bora! O tempo não para, e como profissionais, temos coisas a fazer?
+leave --All--
+join principal leftmost
+principal: Por favor, se introduz primeiro…
+leave --All--
+join Isla leftmost
+Isla: “Sou a Isla, assistente de detetive profissional. Esse cara paga muito mal, caso ele não tenha te falado o salário. E é corrupto, só preciso achar provas.
+Isla: Eu não sei nem se sou empregado dele, e salvou minha vida… mas acho que é bom saber.
+[wait time="2.5"]
+jump cena2 - BarLindoBar/
